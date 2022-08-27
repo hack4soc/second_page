@@ -1,231 +1,120 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
-    <style>
-        * {
-            padding: 0px;
-            margin: 0px;
-        }
-
-        .navbar {
-            display: flex;
-            background-color: rgb(55, 236, 236);
-        }
-
-        .logo {
-            display: flex;
-        }
-
-        .logo img {
-            height: 45px;
-            padding: 4px;
-            margin: 4px;
-        }
-
-        .left {
-            display: flex;
-        }
-
-        .left li a {
-            padding: 4px;
-            margin: 5px;
-            text-decoration: none;
-            color: black;
-            font-size: 1.5rem;
-        }
-
-        .left li {
-            margin: 15px;
-            list-style: none;
-        }
-
-        .right {
-            display: flex;
-            position: absolute;
-            right: 10px;
-
-        }
-
-        .right li a {
-            padding: 4px;
-            margin: 5px;
-            text-decoration: none;
-            color: black;
-            font-size: 1.5rem;
-
-        }
-
-        .right li {
-            margin: 15px;
-            list-style: none;
-        }
-
-        .left a:hover {
-            background-color: red;
-            border-radius: 20px;
-
-        }
-
-        .right a:hover {
-            background-color: red;
-            border-radius: 20px;
-
-        }
-
-        .h-primary {
-            padding: 5px;
-            margin: 10px;
-            font-size: 2.8rem;
-
-        }
-
-        .section-1 {
-            margin: 10px;
-            display: flex;
-        }
-
-        .section-1 .box {
-
-            flex-direction: column;
-            border: 2px solid red;
-            margin: 5px;
-        }
-
-        .box img {
-            display: block;
-            margin: auto;
-            height: 300px;
-
-
-        }
-
-        .center {
-            text-align: center;
-
-
-        }
-
-        .h-secondary {
-            text-align: center;
-            font-size: 2.2rem;
-
-        }
-
-        #prep {
-
-
-
-            align-items: center;
-            background-color: chocolate;
-        }
-
-        #prep::before {
-            position: relative;
-            background-color: burlywood;
-
-
-
-
-        }
-    </style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <script src="https://kit.fontawesome.com/7b158c3a4f.js" crossorigin="anonymous"></script>
+  <script src="js/wow.min.js"></script>
+  <script>
+    new WOW().init();
+  </script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="icon" href="icon/harvest.ico">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:wght@700&family=Poppins:wght@300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <title>HUManity | Turn your educational dream into reality </title>
+  <title>Your Dashboard</title>
 </head>
 
 <body>
-    <header>
-        <nav class="navbar">
-            <div class="logo">
-                <img src="https://humanityorg.in/wp-content/uploads/2021/05/humanity.png"
-                    alt="Humanity Uplifting Mankind">
+  <div class="clear-space ">
+    <!-- Top section -->
+    <!-- <section class="global-banner"> -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+      <a class="navbar-brand" href="#">
+        <img src="https://humanityorg.in/wp-content/uploads/2021/05/humanity.png" alt="brand_image" width="170" height="60" class="d-inline-block align-top" style="margin-top:3px;">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <form class="form-inline my-2 my-lg-0 mr-auto">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+              <i class="fa-solid fa-user-large"></i>&nbsp;&nbsp;User_Name
+            </a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">Profile</a>
+              <a class="dropdown-item" href="#">Books Read</a>
             </div>
-            <ul class="left">
-                <li> <a href="#">lorem</a></li>
-                <li> <a href="#">lorem</a></li>
-                <li> <a href="#">lorem</a></li>
-                <li> <a href="#">lorem</a></li>
-            </ul>
-            <ul class="right">
-                <li> <a href="#">lorem</a></li>
-                <li> <a href="#">lorem</a></li>
-
-            </ul>
-
-
-        </nav>
-    </header>
-    <section id="body">
-
-        <h2 class="h-primary" id="prep">
-            Your Preparation
-
-        </h2>
-
-        <div class="section-1">
-            <div class="box">
-                <img src="https://n2.sdlcdn.com/imgs/a/4/6/Harry-Potter-And-The-Philosophers-SDL237954387-1-5e0d6.jpg"
-                    alt="">
-                <h3 class="h-secondary">
-                    Harry Potter</h3>
-                <p class="center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet voluptates
-                    nostrum
-                    libero doloribus
-                    fugiat labore dicta cum, mollitia officiis excepturi ex sapiente deleniti autem temporibus enim
-                    rem
-                    corrupti ipsam adipisci reiciendis illo. Deserunt, eveniet.</p>
-                <p class="center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet voluptates
-                    nostrum
-                    libero doloribus
-                    fugiat labore dicta cum, moofficiis exri ex sapiente deleniti autem temporibus enim rem
-                    corrupti ipsam adipisci reiciendis illo. Deserunt, eveniet.</p>
-
+          </li>
+        </ul>
+        <ul class="navbar-nav navbar-nav-scroll ">
+          <li class="nav__item nav__item--button nav__item--button-mobile" style="margin-right:.4em; margin-left:2em;">
+            <a href="" class="button button--small" style="background-color: rgb(245, 81, 91); color: rgb(255, 255, 255); cursor:pointer" onmouseover="this.style.color='#000000'" onmouseout="this.style.color='#FFFFFF'" rel="noopener noreferrer"
+              target="_blank">
+              <span>Log out&nbsp;<i class="fa-solid fa-right-from-bracket"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+      <h3 class="display-5">Where you left :</h3>
+    <!-- beginning of new section -->
+    <section>
+      <div class="container">
+        <div class="card-deck mb-3 text-center">
+          <div class="card mb-4 box-shadow">
+            <div class="card-header">
+              <h4 class="my-0 font-weight-normal">The Alchemist</h4>
             </div>
-            <div class="box">
-                <img src="https://n2.sdlcdn.com/imgs/a/4/6/Harry-Potter-And-The-Philosophers-SDL237954387-1-5e0d6.jpg"
-                    alt="">
-                <h3 class="h-secondary">
-                    Harry Potter</h3>
-                <p class="center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet voluptates
-                    nostrum
-                    libero doloribus
-                    fugiat labore dicta cum, mollitia officiis excepturi ex sapiente deleniti autem temporibus enim
-                    rem
-                    corrupti ipsam adipisci reiciendis illo. Deserunt, eveniet.</p>
-                <p class="center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet voluptates
-                    nostrum
-                    libero doloribus
-                    fugiat labore dicta cum, moofficiis exri ex sapiente deleniti autem temporibus enim rem
-                    corrupti ipsam adipisci reiciendis illo. Deserunt, eveniet.</p>
-
+            <div class="card-body">
+              <img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1466865681l/25076674._SY475_.jpg" alt="the alchemist" class="card-title pricing-card-title" style="width:240px;">
+              <ul class="list-unstyled mt-3 mb-4">
+                <li><strong><em>Author : Paulo Coelho</em></strong></li>
+                <li>Breif Discription:</li>
+                <li>The Alchemist is a novel by Brazilian author Paulo Coelho which was first published in 1988. Originally written in Portuguese, it became a widely translated international bestseller.</li>
+              </ul>
+              <button type="button" class="btn btn-lg btn-block btn-outline-primary">Start Reading</button>
             </div>
-            <div class="box">
-                <img src="https://n2.sdlcdn.com/imgs/a/4/6/Harry-Potter-And-The-Philosophers-SDL237954387-1-5e0d6.jpg"
-                    alt="">
-                <h3 class="h-secondary">
-                    Harry Potter</h3>
-                <p class="center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet voluptates
-                    nostrum
-                    libero doloribus
-                    fugiat labore dicta cum, mollitia officiis excepturi ex sapiente deleniti autem temporibus enim
-                    rem
-                    corrupti ipsam adipisci reiciendis illo. Deserunt, eveniet.</p>
-                <p class="center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet voluptates
-                    nostrum
-                    libero doloribus
-                    fugiat labore dicta cum, moofficiis exri ex sapiente deleniti autem temporibus enim rem
-                    corrupti ipsam adipisci reiciendis illo. Deserunt, eveniet.</p>
-
+          </div>
+          <div class="card mb-4 box-shadow">
+            <div class="card-header">
+              <h5 class="my-0 font-weight-normal">Diary of the Wimpy Kid</h5>
             </div>
-
-
-
-
+            <div class="card-body">
+              <img src="https://images-na.ssl-images-amazon.com/images/I/81R2N4PRuUL.jpg" alt="image" class="card-title pricing-card-title" style="width:240px;">
+              <ul class="list-unstyled mt-3 mb-4">
+                <li><strong><em>Author : Jeff Kinney</em></strong></li>
+                <li>Breif Discription:</li>
+                <li>Diary of a Wimpy Kid is an American children’s book series and media franchise created by author and cartoonist Jeff Kinney. The series follows Greg Heffley, a middle-schooler who illustrates his daily life in a diary.</li>
+              </ul>
+              <button type="button" class="btn btn-lg btn-block btn-outline-primary">Start Reading</button>
+            </div>
+          </div>
+          <div class="card mb-4 box-shadow">
+            <div class="card-header">
+              <h4 class="my-0 font-weight-normal">The Alchemist</h4>
+            </div>
+            <div class="card-body">
+              <img src="https://kbimages1-a.akamaihd.net/265498db-16c5-421a-b481-e0f4a99e6a74/353/569/90/False/the-diary-of-a-young-girl-27.jpg" alt="image" class="card-title pricing-card-title" style="width:240px;">
+              <ul class="list-unstyled mt-3 mb-4">
+                <li><strong><em>Author : Anne Frank</em></strong></li>
+                <li>Breif Discription:</li>
+                <li>The Diary of a Young Girl, also known as The Diary of Anne Frank, is a book of the writings from the Dutch-language diary kept by Anne Frank while she was in hiding for two years with her family during the Nazi occupation of the Netherlands.</li>
+              </ul>
+              <button type="button" class="btn btn-lg btn-block btn-outline-primary">Start Reading</button>
+            </div>
+          </div>
         </div>
+      </div>
+      <a href="" class="button button--small" style="background-color: #030f27; color: rgb(255, 255, 255); cursor:pointer" onmouseover="this.style.color='#EAF6F6'" onmouseout="this.style.color='#FFFFFF'" rel="noopener noreferrer"
+        target="_blank">
+        <span>Find all the books you've read here&nbsp;<i class="fa-solid fa-arrow-right"></i></span>
+      </a>
     </section>
-
+  </div>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
 
 </html>
